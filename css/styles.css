@@ -241,6 +241,7 @@ address {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
+
 .modal-buton {
   display: flex;
   position: fixed;
@@ -838,20 +839,25 @@ address li:not(:last-child) {
   padding-top: 16px;
   padding-bottom: 16px;
 
+  color: #ffffff;  
   border-radius: 4px ;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--footer-background);
   margin-right: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.input-sub:checked{
+.input-sub:-webkit-autofill { 
+  -webkit-background-clip: text;
   
-  /* background-color: var(--footer-background); */
+}
+.input-sub::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.label-sub{
- color: rgba(255, 255, 255, 0.6);
-}
 
 .sub-form{
   display: flex;
@@ -872,7 +878,7 @@ address li:not(:last-child) {
   color: var(--background-bootun);
   background-color: var(--acent-text-color);
   letter-spacing: 0.06em;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  
   border-radius: 4px;
   cursor: pointer;
   
@@ -885,3 +891,4 @@ address li:not(:last-child) {
 top: 10px;
 right: 23px;
 }
+/* ----SUB OFF---- */
