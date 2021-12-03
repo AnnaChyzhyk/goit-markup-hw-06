@@ -230,6 +230,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
 
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 1, 3, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -241,6 +242,9 @@ address {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
+textarea{
+  resize: none;
+}
 
 .modal-buton {
   display: flex;
@@ -260,6 +264,108 @@ address {
 .modal-icon {
   height: 100%;
 }
+
+/* forma */
+
+.form{
+  text-align: left;
+}
+
+.titel-modal{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--primary-text-color);
+  margin-bottom: 12px;
+}
+
+.form-imput{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-right: 15px;
+  color: rgba(117, 117, 117, 1)
+  
+}
+
+
+
+.form-label{
+display: block;
+margin-bottom: 5px;
+
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+
+color: var(--secondary-text-color);
+}
+
+.modal-form-text{
+  width: 100%;
+  height: 120px;
+  padding: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: rgba(117, 117, 117, 1)
+ 
+}
+
+.modal-form-text::placeholder{
+  font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+}
+
+.text-form{
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+
+.checkbox-label a{
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+.button-form{
+width: 200px;
+height: 50px;
+  
+background: var(--acent-text-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: var(--acent-text-color);
+color: var(--header-text-color);
+display: block; 
+margin:30px auto;
+}
+
+.form-field{
+  
+  
+margin-top: 10px;
+
+}
+
+.svg-form{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 16px;
+}
+/* end  modal window */
+
 /* блок герой */
 .main-title {
   box-sizing: border-box;

@@ -66,29 +66,62 @@
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
-          <p class="titel-modal">Оставьте свои данные, мы вам перезвоним</p>
-
-           <form action="">
+          
+           <form action="" class="form">
+            <p class="titel-modal">Оставьте свои данные, мы вам перезвоним</p>
+              
              <div class="form-field">
-               <input type="text" name="name" id="name" class="form-imput">
-               <label for="name" class="form-label" >Имя</label>
+              <label for="name" class="form-label">Имя</label>
+               <input type="text" 
+               name="name" 
+               id="name" 
+               class="form-imput" 
+               required>
+               <svg class="svg-form">
+                 <use href="./images/icons.svg#icon-person-black">
+                 </use>
+               </svg>
              </div>
 
             <div class="form-field">
-              <input type="tel" name="tel" id="tel" class="form-imput">
-              <label for="tel" class="form-label" >Телефон</label>
-            </div>
-            <div class="form-field">
-              <input type="email" name="mail" id="mail" class="form-imput">
-              <label for="mail" class="form-label">Почта</label>
+              <label for="tel" class="form-label">Телефон</label>
+              <input type="tel" 
+              name="tel" 
+              id="tel" 
+              class="form-imput" 
+              required>
+              <svg class="svg-form">
+                <use href="./images/icons.svg#icon-person-black">
+                </use>
+              </svg>
             </div>
 
             <div class="form-field">
-              
+              <label for="mail" class="form-label">Почта</label>
+              <input type="email" 
+              name="mail" 
+              id="mail"
+              class="form-imput" 
+              required>
+              <svg class="svg-form">
+                <use href="./images/icons.svg#icon-person-black">
+                </use>
+              </svg>
+            </div>
+
+            <div class="form-field">
               <label for="comment" class="form-label">Коментарий</label>
-              <textarea name="" id="comment" placeholder="введите текст"></textarea>
+              <textarea name="" id="comment" placeholder="введите текст" class="modal-form-text"></textarea>
             </div>
              
+            <div class="form-field">
+              <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-imput" required>
+              <label for="checkbox" class="checkbox-label">
+                <span class="text-form">Соглашаюсь с рассылкой и принимаю</span>
+              <a href="#">Условия договора</a></label>
+            </div>
+
+            <button type="submit" class="button-form">Отправить</button>
            
            </form>
         </div>
