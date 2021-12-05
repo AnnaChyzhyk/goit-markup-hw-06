@@ -66,7 +66,9 @@
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
-          
+
+          <!-- forma -->
+
            <form action="" class="form">
             <p class="titel-modal">Оставьте свои данные, мы вам перезвоним</p>
               
@@ -117,9 +119,10 @@
               <textarea name="" id="comment" placeholder="введите текст" class="modal-form-text"></textarea>
             </div>
              
-            <div class="form-field">
-              <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-imput" required>
+            <div class="form-checkbox">
               <label for="checkbox" class="checkbox-label">
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-imput visually-hidden " required>
+                <span class="svg-checkbox"> </span>
                 <span class="text-form">Соглашаюсь с рассылкой и принимаю</span>
               <a href="#">Условия договора</a></label>
             </div>
@@ -482,9 +485,8 @@
           </li>
         </ul>
       </div>
-        
+        <!-- ----- FORMA FOOTER ----- -->
       <form class="sub-group" role="group">
-    
         <p class="footer-text">Подпишитесь на рассылку</p>
         <div class="sub-form">
         <label for="mail" class="label-sub">
@@ -499,6 +501,7 @@
         </button>
         </div>
       </form>
+      <!-- ----- FORMA FOOTER  END ----- -->
     </div>
   </footer>
   <script src="./js/modal.js"></script>
