@@ -55,13 +55,13 @@
     <section class="main-title">
       <div class="container container-heroes">
         <h1 class="title-text">Эффективные решения для вашего бизнеса</h1>
-        <button type="button-main" aria-label="Заказать услугу" class="hero-buton" data-modal-open>Заказать
+        <button type="button" aria-label="Заказать услугу" class="hero-buton" data-modal-open>Заказать
           услугу</button>
       </div>
       <!-- modal -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button-main" aria-label="close" class="modal-buton" data-modal-close>
+          <button type="button" aria-label="close" class="modal-buton" data-modal-close>
             <svg class="modal-icon">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
@@ -69,67 +69,56 @@
 
           <!-- forma -->
 
-           <form action="" class="form">
+          <form action="#" class="form">
             <p class="titel-modal">Оставьте свои данные, мы вам перезвоним</p>
-              
-             
-              <label for="name" class="form-label">Имя</label>
-              <div class="form-field">
-               <input type="text" 
-               name="name" 
-               id="name" 
-               class="form-imput" 
-               required>
-               <svg class="svg-form">
-                 <use href="./images/icons.svg#icon-person-black">
-                 </use>
-               </svg>
-             </div>
 
-            
-              <label for="tel" class="form-label">Телефон</label>
-              <div class="form-field">
-              <input type="tel" 
-              name="tel" 
-              id="tel" 
-              class="form-imput" 
-              required>
+
+            <label for="name" class="form-label">Имя</label>
+            <div class="form-field">
+              <input type="text" name="name" id="name" class="form-imput" required>
+              <svg class="svg-form">
+                <use href="./images/icons.svg#icon-person-black">
+                </use>
+              </svg>
+            </div>
+
+
+            <label for="tel" class="form-label">Телефон</label>
+            <div class="form-field">
+              <input type="tel" name="tel" id="tel" class="form-imput" required>
               <svg class="svg-form">
                 <use href="./images/icons.svg#icon-phone-black">
                 </use>
               </svg>
             </div>
 
-            
-              <label for="mail" class="form-label">Почта</label>
-              <div class="form-field">
-              <input type="email" 
-              name="mail" 
-              id="mail"
-              class="form-imput" 
-              required>
+
+            <label for="mail" class="form-label">Почта</label>
+            <div class="form-field">
+              <input type="email" name="mail" id="mail" class="form-imput" required>
               <svg class="svg-form">
                 <use href="./images/icons.svg#icon-email-black">
                 </use>
               </svg>
             </div>
 
+            <label for="comment" class="form-label">Коментарий</label>
             <div class="form-field">
-              <label for="comment" class="form-label">Коментарий</label>
-              <textarea name="" id="comment" placeholder="введите текст" class="modal-form-text"></textarea>
+
+              <textarea name="text" id="comment" placeholder="введите текст" class="modal-form-text"></textarea>
             </div>
-             
+
             <div class="form-checkbox">
               <label for="checkbox" class="checkbox-label">
                 <input type="checkbox" name="checkbox" id="checkbox" class="checkbox-imput visually-hidden " required>
                 <span class="svg-checkbox"> </span>
                 <span class="text-form">Соглашаюсь с рассылкой и принимаю</span>
-              <a href="#">Условия договора</a></label>
+                <a href="#">Условия договора</a></label>
             </div>
 
             <button type="submit" class="button-form">Отправить</button>
-           
-           </form>
+
+          </form>
         </div>
       </div>
       <!-- end modal -->
@@ -179,7 +168,7 @@
                 <use href="./images/icons.svg#icon-astronaut-1"> </use>
               </svg>
             </div>
-            </svg>
+
             <h3 class="subtitle-list">Современные технологии</h3>
             <p class="text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -361,10 +350,9 @@
                   </a>
                 </li>
               </ul>
+            </div>
+          </li>
         </ul>
-      </div>
-      </li>
-      </ul>
       </div>
     </section>
 
@@ -485,20 +473,20 @@
           </li>
         </ul>
       </div>
-        <!-- ----- FORMA FOOTER ----- -->
-      <form class="sub-group" role="group">
+      <!-- ----- FORMA FOOTER ----- -->
+      <form class="sub-group">
         <p class="footer-text">Подпишитесь на рассылку</p>
         <div class="sub-form">
-        <label for="mail" class="label-sub">
-          <input type="email" name="mail" placeholder="E-mail" class="input-sub" >
-        </label>
-        
-        <button type="submit" class="button-sub">Подписаться<span>
-            <svg class="cvg-sub">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </span>
-        </button>
+          <label for="email" class="label-sub">
+            <input type="email" name="mail" placeholder="E-mail" class="input-sub" id="email">
+          </label>
+
+          <button type="submit" class="button-sub">Подписаться<span>
+              <svg class="cvg-sub">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </span>
+          </button>
         </div>
       </form>
       <!-- ----- FORMA FOOTER  END ----- -->
